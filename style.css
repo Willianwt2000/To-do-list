@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace , sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+    background: url(abstracto-blue.webp) no-repeat center center / cover;
+}
+
+.container {
+    width: 700px;
+    min-height: 500px;
+    background-color: #ffffffbe;
+    padding: 40px;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 7px 10px rgb(0, 0, 0.2);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+input {
+    width: 80%;
+    height: 50px;
+    font-size: 1.5rem;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid rgba(190, 93, 23, 0.849);
+}
+
+
+input::placeholder {
+    color: #999; 
+    transition: color 0.3s;
+}  
+input:focus::placeholder {
+    color: #007bffc9; 
+}
+
+
+button {
+    width: 150px;
+    height: 60px;
+    color: #fff;
+    background:  linear-gradient(to right, #00c3ffc7, #046ef8cb);
+    font-size: 1.3rem;
+    border-radius: 20px;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px rgb(0, 0, 0.2);
+}
+
+/*taks list*/
+
+#list-of-task {
+    width: 80%;
+    margin-top: 20px;
+}
+
+/*tareas*/
+
+.tarea {
+    width: 100%;
+    min-height: 70PX;
+    font-size: 1.5;
+    padding: 10px;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #407ba6;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
+
+/*Tareas completada*/
+.tarea.completada {
+    text-decoration: line-through;
+    background-color: #000;
+    border: none;
+}
+
+.tarea p {
+    max-width: 350px;
+}
+
+/*icono*/
+
+i {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.icono-completar {
+    color: rgb(0,255,0);
+}
+
+.icono-eliminar {
+    color: rgb(255,255,255);
+}
+
+.icono-completar:hover,
+.icono-eliminar:hover {
+    background-color: rgb(255, 255, 255,0.523);
+}
+
